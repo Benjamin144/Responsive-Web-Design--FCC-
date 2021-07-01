@@ -39,6 +39,11 @@
 
         background-color: silver;
       }
+
+      #cat-photo-form {
+        background: green;
+
+      }
     </style>
     <h2 class="red-text">CatPhotoApp</h2>
   
@@ -69,7 +74,12 @@
     </ol>
   </div>
   </ol>
-  <form id="cat-photo-form" action="https://www.freecatphotoapp.com/submit-cat-photo">
+
+  <!-- However, an id is not reusable and should only be applied to one element. 
+    An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, 
+    the styles of the id will be applied. -->
+
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form" >
     <label for="indoor">
       <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label>
     <label for="outdoor">
@@ -87,3 +97,5 @@
 </main>
 </body>
 <footer id="footer">Copyright Cat Photo App</footer>
+
+
