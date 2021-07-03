@@ -79,6 +79,10 @@ body {
   color: pink;
 }
 
+.blue-text {
+  color: blue;
+}
+
 </style>
 <h5 class="injected-text">margin</h5>
 
@@ -89,7 +93,13 @@ body {
     
   
 <main>
-  <h1 class="pink-text">The One & Only</h1>
+
+<!-- Note: It doesn't matter which order the classes are listed in the HTML element.
+However, the order of the class declarations in the <style> section is what is important. 
+The second declaration will always take precedence over the first. 
+Because .blue-text is declared second, it overrides the attributes of .pink-text -->
+
+  <h1 class="pink-text blue-text">The One & Only</h1>
   <h2 class="red-text">CatPhotoApp</h2>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     <a href="#">
