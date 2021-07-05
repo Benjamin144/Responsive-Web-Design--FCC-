@@ -99,11 +99,11 @@ body {
 <main>
 
 <!-- Note: It doesn't matter which order the classes are listed in the HTML element.
-However, the order of the class declarations in the <style> section is what is important. 
+However, the order of the class declaration;=s in the <style> section is what is important. 
 The second declaration will always take precedence over the first. 
 Because .blue-text is declared second, it overrides the attributes of .pink-text -->
 
-  <h1 id="orange-text" class="pink-text blue-text">The One & Only!</h1>
+  <h1 style="color:white;" id="orange-text" class="pink-text blue-text">The One & Only!</h1> <!--  So this proves that id declarations override class declarations, regardless of where they are declared in your style element CSS.-->
   <h2 class="red-text">CatPhotoApp</h2>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     <a href="#">
