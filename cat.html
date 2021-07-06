@@ -96,6 +96,109 @@ body {
   color: #FFA500;
 }
 
+.fuchsia-text {
+  color: fuchsia;
+}
+
+#orange-text {
+  color: black;
+}
+
+    <style>
+
+body {
+  background-color: #000000;
+  color: green;
+  font-family: monospace;
+}
+
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: crimson;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+    padding: 1.5em;
+  }
+
+  .blue-box {
+    background-color: blue;
+    color: #fff;
+    margin: 20px 40px 20px 40px;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 100%;
+  }
+
+ 
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+[type='checkbox'] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.red-text {
+    color: #F00;
+  }
+
+.green-text {
+  color: #0F0;
+}
+
+.pink-text {
+  color: pink !important;
+}
+
+.blue-text {
+  color: #001AE6;
+}
+
+.dodger-blue-text {
+  color:#1E90FF;
+}
+
+.orange-text {
+  color: #FFA500;
+}
+
+.fuchsia-text {
+  color: #F0F;
+}
+.cyan-text {
+  color: #0FF;
+}
+
 #orange-text {
   color: black;
 }
@@ -117,10 +220,12 @@ The second declaration will always take precedence over the first.
 Because .blue-text is declared second, it overrides the attributes of .pink-text -->
 
   <h1 style="color:white;" id="orange-text" class="pink-text blue-text">Back by popular demand!</h1> <!--  So this proves that id declarations override class declarations, regardless of where they are declared in your style element CSS.-->
-  <h1 class="red-text">I am the red cat!</h1>
-  <h1 class="green-text">I am the green cat!</h1>
-  <h1 class="dodger-blue-text">I am the dodger blue cat!</h1>
-  <h1 class="orange-text">I am the orange cat!</h1>
+  <h1 class="red-text">Hello I am the red cat!</h1>
+  <h1 class="dodger-blue-text">Hello I am the dodger blue cat!</h1>
+  <h1 class="orange-text">Hello I am the orange cat!</h1>
+  <h1 class="green-text">Hello I am the green cat!</h1>
+  <h1 class="fuchsia-text">Hello I am the fuchsia cat!</h1>
+  <h1 class="cyan-text">I am the cyan cat!</h1>
   <h2 class="red-text">CatPhotoApp</h2>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     <a href="#">
@@ -153,7 +258,7 @@ Because .blue-text is declared second, it overrides the attributes of .pink-text
     An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, 
     the styles of the id will be applied. -->
 
-  <form action="https://w111111111111111111111111111111111ww.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form" >
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form" >
     <label for="indoor">
       <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label>
     <label for="outdoor">
