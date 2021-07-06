@@ -57,10 +57,7 @@ body {
     border-radius: 100%;
   }
 
-  .red-text {
-    color: red;
-  }
-
+ 
   h2 {
     font-family: Lobster, monospace;
   }
@@ -75,6 +72,14 @@ body {
   margin-bottom: 15px;
 }
 
+.red-text {
+    color: #FF0000;
+  }
+
+.green-text {
+  color: #00FF00;
+}
+
 .pink-text {
   color: pink !important;
 }
@@ -83,8 +88,16 @@ body {
   color: blue;
 }
 
+.dodger-blue-text {
+  color:#1E90FF;
+}
+
+.orange-text {
+  color: #FFA500;
+}
+
 #orange-text {
-  color: orange;
+  color: black;
 }
 
 </style>
@@ -103,7 +116,11 @@ However, the order of the class declaration;=s in the <style> section is what is
 The second declaration will always take precedence over the first. 
 Because .blue-text is declared second, it overrides the attributes of .pink-text -->
 
-  <h1 style="color:white;" id="orange-text" class="pink-text blue-text">The One & Only!</h1> <!--  So this proves that id declarations override class declarations, regardless of where they are declared in your style element CSS.-->
+  <h1 style="color:white;" id="orange-text" class="pink-text blue-text">Back by popular demand!</h1> <!--  So this proves that id declarations override class declarations, regardless of where they are declared in your style element CSS.-->
+  <h1 class="red-text">I am the red cat!</h1>
+  <h1 class="green-text">I am the green cat!</h1>
+  <h1 class="dodger-blue-text">I am the dodger blue cat!</h1>
+  <h1 class="orange-text">I am the orange cat!</h1>
   <h2 class="red-text">CatPhotoApp</h2>
   <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
     <a href="#">
@@ -136,7 +153,7 @@ Because .blue-text is declared second, it overrides the attributes of .pink-text
     An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, 
     the styles of the id will be applied. -->
 
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form" >
+  <form action="https://w111111111111111111111111111111111ww.freecatphotoapp.com/submit-cat-photo" id="cat-photo-form" >
     <label for="indoor">
       <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked>Indoor</label>
     <label for="outdoor">
@@ -154,4 +171,5 @@ Because .blue-text is declared second, it overrides the attributes of .pink-text
 </main>
 </body>
 <footer id="footer">Copyright Cat Photo App</footer>
+
 
